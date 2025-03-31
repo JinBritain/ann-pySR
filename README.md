@@ -8,7 +8,7 @@
 
 我们的主要工作时间跨度为2024.11.02-2025.1.9，在2025.3.31前做了整理与优化。
 
-
+#枚举随机种子找到固定网络结构下的超优拟合状态
 
 ```python
 !pip install SciencePlots
@@ -103,7 +103,7 @@ print(f"最佳随机种子是: {best_seed}, R²值: {results_df.iloc[0]['r2_scor
 #接着再把最佳种子带进原结构神经网络
 ```
 
-
+#PySR
 
 ```python
 import numpy as np 
@@ -131,7 +131,6 @@ model = PySRRegressor(
     ],
     extra_sympy_mappings={"inv": lambda x: 1 / x},
     # ^ Define operator for SymPy as well
-```
     elementwise_loss="loss(prediction, target) = (prediction - target)^2",
     # ^ Custom loss function (julia syntax)
     model_selection= "best"
@@ -141,3 +140,4 @@ model = PySRRegressor(
 X_train = train_df[['n', 'pd', 'wd', 'hd', 'r']]  # 特征
 y_train = train_df['f']  # 目标变量
 model.fit(X_train, y_train)
+```

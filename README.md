@@ -2,11 +2,11 @@
 
 我们采集来自20+文献数据的300+条数据作为训练集，*******提供的62条数据作为测试集，很遗憾数据和网络结构暂时均无法开源，如果需要训练集可以联系[Kexin Ji](zoeinessakl@163.com)。
 
-我们特别感谢*******提供数据与平台，感谢[kaggle]（https://www.kaggle.com/）提供强大算力，感谢Garrett提供专业方便的作图工具[PyPI]（https://github.com/garrettj403/SciencePlots），感谢Miles Cranmer提供符号回归工具[PySR]（https://github.com/MilesCranmer/PySR）。 
+我们特别感谢*******提供数据与平台，感谢[kaggle](https://www.kaggle.com/)提供强大算力，感谢Garrett提供专业方便的作图工具[PyPI])(https://github.com/garrettj403/SciencePlots)，感谢Miles Cranmer提供符号回归工具[PySR](https://github.com/MilesCranmer/PySR)。 
 
 我们选择了kaggle的jupyter notebook作为机器学习训练及可视化环境，我们将提供两段代码：第一段是枚举随机种子找到固定网络结构下的超优拟合状态（在此之前我们已经得到一个表现非常不错的神经网络参数了，因为我们想验证此神经网络泛化性，并且提升其应用价值，所以对随机种子做了枚举工作）；第二段是PySR的应用，因为PySR是一个完全随机不可复现的过程，所以需要自己判别每一次跑出来的结果，我们在2024.12-2025.1期间人工判别了百余次，才找到了表现最好的表达式。
 
-我们的主要工作时间跨度为2024.11.02-2025.1.9，在2025.3.31做了整理与优化。
+我们的主要工作时间跨度为2024.11.02-2025.1.9，在2025.3.31前做了整理与优化。
 
 
 
